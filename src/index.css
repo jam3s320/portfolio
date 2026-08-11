@@ -1,0 +1,7 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #1a1e23;
+  scroll-behavior: smooth; /* This single line creates the smooth scroll! */
+}
