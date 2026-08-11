@@ -5,8 +5,12 @@ const Navbar = () => {
     <nav style={styles.nav}>
       <ul style={styles.navList}>
         <li><a href="#home" style={styles.link}>Home</a></li>
+        <li><a href="#about" style={styles.link}>About</a></li>
+        <li><a href="#education" style={styles.link}>Education</a></li>
         <li><a href="#experience" style={styles.link}>Experience</a></li>
         <li><a href="#projects" style={styles.link}>Projects</a></li>
+        <li><a href="#skills" style={styles.link}>Skills</a></li>
+        <li><a href="#contact" style={styles.link}>Contact</a></li>
       </ul>
     </nav>
   );
@@ -14,11 +18,11 @@ const Navbar = () => {
 
 const styles = {
   nav: {
-    position: 'fixed', /* Keeps it glued to the screen */
+    position: 'fixed',
     top: 0,
     right: 0,
     padding: '30px 50px',
-    zIndex: 100 /* Ensures it stays on top of everything else */
+    zIndex: 100 
   },
   navList: {
     listStyle: 'none',
@@ -28,10 +32,11 @@ const styles = {
     padding: 0
   },
   link: {
-    color: '#a8b2d1',
+    color: '#d1d5db',
     textDecoration: 'none',
-    fontSize: '1.1rem',
-    fontWeight: 'bold',
+    fontSize: '1.25rem', /* Slightly larger to match the image proportions */
+    fontFamily: 'Georgia, "Times New Roman", serif', /* Applies the elegant serif font */
+    fontWeight: 'normal', /* Removes the previous bold weight */
     transition: 'color 0.2s',
     cursor: 'pointer'
   }

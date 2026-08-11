@@ -1,54 +1,53 @@
 import React from 'react';
-/* Importing the local images from your assets folder */
-import stevensLogo from '../assets/stevens.png';
-import tenzorLogo from '../assets/tenzor.png';
+/* Make sure the filenames here perfectly match what you named them in your assets folder! */
+import stevensLogo from '../assets/stevens.png'; 
+import rutgersLogo from '../assets/rutgers.png';
 
-const Experience = () => {
-  const experienceData = [
+const Education = () => {
+  const educationData = [
     {
-      role: "Music & Tech Lab Monitor",
-      company: "Stevens Institute of Technology",
-      location: "Hoboken, NJ",
-      date: "April 2026 – May 2026",
-      logo: stevensLogo,
+      degree: "Bachelor of Science in Computer Science",
+      school: "Stevens Institute of Technology - Hoboken, NJ",
+      date: "August 2025 - May 2029",
+      logo: stevensLogo, /* Using the imported local image */
       bullets: [
-        "Directed access control for the Music & Tech Lab, verifying authorizations and guiding users through the room reservation process via Microsoft Bookings.",
-        "Spearheaded inventory management for the equipment closet, taking accountability for the distribution and secure return of specialized audio gear and instruments.",
-        "Maintained meticulous daily logs of facility usage and collaborated with team members to ensure a clean, organized, and welcoming environment for all users."
+        { label: "Minor", text: "Cybersecurity" },
+        { label: "Courses", text: "Discrete Mathematics, Data Structures & Algorithms, Computer Architecture & Organization" },
+        { label: "Activities", text: "Filipino Association at Stevens Tech (FAST), Society of Asian Scientists and Engineers (SASE), Volleyball Club, Blueprint" }
       ]
     },
     {
-      role: "Software Engineer",
-      company: "Tenzor LLC",
-      location: "Brigantine, NJ",
-      date: "Nov. 2025 – Dec. 2025",
-      logo: tenzorLogo,
+      degree: "High School Diploma",
+      school: "Rutgers Preparatory School",
+      date: "September 2021 - May 2025",
+      logo: rutgersLogo, /* Using the imported local image */
       bullets: [
-        "Engineered the startup's core authentication flow by building the sign-in and sign-up interfaces with JavaScript/TypeScript and Better Auth for robust session handling.",
-        "Architected the backend data structure using Prisma, designing a maintainable and scalable database schema to handle core API requests."
+        { label: "Experience", text: "RPS Geofence App Developer (Study Hall System)" }
       ]
     }
   ];
 
   return (
-    <section id="experience" style={styles.section}>
-      <h2 style={styles.headingText}>Experience</h2>
+    <section id="education" style={styles.section}>
+      <h2 style={styles.headingText}>Education</h2>
       
       <div style={styles.timeline}>
-        {experienceData.map((item, index) => (
+        {educationData.map((item, index) => (
           <div key={index} style={styles.timelineItem}>
             <div style={styles.logoContainer}>
-              <img src={item.logo} alt={`${item.company} logo`} style={styles.logo} />
+              <img src={item.logo} alt={`${item.school} logo`} style={styles.logo} />
             </div>
             
             <div style={styles.card}>
-              <h3 style={styles.role}>{item.role}</h3>
-              <p style={styles.company}>{item.company} | {item.location}</p>
+              <h3 style={styles.degree}>{item.degree}</h3>
+              <p style={styles.school}>{item.school}</p>
               <p style={styles.date}>{item.date}</p>
               
               <ul style={styles.list}>
                 {item.bullets.map((bullet, i) => (
-                  <li key={i} style={styles.listItem}>{bullet}</li>
+                  <li key={i} style={styles.listItem}>
+                    <strong>{bullet.label}:</strong> {bullet.text}
+                  </li>
                 ))}
               </ul>
             </div>
@@ -116,13 +115,13 @@ const styles = {
     borderBottom: '3px solid #e2e8f0',
     boxShadow: '0 4px 6px rgba(0, 0, 0, 0.2)'
   },
-  role: {
+  degree: {
     fontSize: '1.5rem',
     margin: '0 0 5px 0',
     color: '#e2e8f0',
     fontWeight: 'bold'
   },
-  company: {
+  school: {
     fontSize: '1rem',
     margin: '0 0 5px 0',
     color: '#cbd5e1'
@@ -144,4 +143,4 @@ const styles = {
   }
 };
 
-export default Experience;
+export default Education;
