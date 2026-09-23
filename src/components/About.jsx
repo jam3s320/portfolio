@@ -18,7 +18,7 @@ const About = () => {
         {/* Right Side: Text and Hobby Icons */}
         <div style={styles.textContent}>
           <p style={styles.paragraph}>
-            👋 Hi, I’m James! I am currently an undergraduate student at Stevens Institute of Technology and majoring in Computer Science with a minor in Artifical Intelligence. I’ve leaned my concentration towards Software Engineering and I have always enjoyed technology and problem solving my whole life and I want to use those skills in my future career. On the side, I love playing sports like volleyball and basketball, as well as playing the drums. 
+            👋 Hi, I’m James! I am currently an undergraduate student at Stevens Institute of Technology and majoring in Computer Science with a minor in Artificial Intelligence. I’ve leaned my concentration towards Software Engineering and I have always enjoyed technology and problem solving my whole life and I want to use those skills in my future career. On the side, I love playing sports like volleyball and basketball, as well as playing the drums. 
           </p>
           
           {/* Hobby Icons Row */}
