@@ -10,6 +10,7 @@ const Navbar = () => {
         <li><a href="#experience" style={styles.link}>Experience</a></li>
         <li><a href="#projects" style={styles.link}>Projects</a></li>
         <li><a href="#skills" style={styles.link}>Skills</a></li>
+        <li><a href="#youtube" style={styles.link}>YouTube</a></li>
         <li><a href="#contact" style={styles.link}>Contact</a></li>
       </ul>
     </nav>

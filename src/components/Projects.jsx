@@ -24,6 +24,15 @@ const Projects = () => {
       ]
     },
     {
+      title: "Free.tv App",
+      date: "June 2025",
+      tech: "Swift, Xcode",
+      bullets: [
+        "Developed an app that turned the web app into an app for Apple devices.",
+        "Used an xml file in order for the user to not access different things on the app such as exiting out of the website in the app."
+      ]
+    },
+    {
       title: "RPS Geofence App",
       date: "May 2025",
       tech: "Swift, Xcode, Firebase",
@@ -33,7 +42,26 @@ const Projects = () => {
         "Collaborated in a group-oriented project, dividing tasks among team members and integrating individual components into a cohesive final product.",
         "Implemented object-oriented programming principles such as inheritance to design multiple account types and structure database interactions effectively."
       ]
-    }
+    },
+    {
+      title: "Browser App",
+      date: "February 2025",
+      tech: "Swift, Xcode",
+      bullets: [
+        "Developed a custom home screen that was similar to google and safari.",
+        "Focused on making a custom search bar and having a designated browser like Google or FireFox for example.",
+        "Added buttons of common websites that are already there when the app is installed such Google, YouTube, Instagram, and New York Times that can easily be removed by the user if needed."
+      ]
+    },
+    {
+      title: "Weather App",
+      date: "January 2025",
+      tech: "Swift, Xcode, weatherapi.com",
+      bullets: [
+        "Developed an app that was similar to most weather apps. Parts that made it unique than others like the Apple weather app was the buttons for common cities such as New York, Boston, Chicago, Los Angeles, etc.",
+        "Used weatherapi.com for the api of the weather in order to get accurate and live data along with the conversions of Celsius to Fahrenheit and vise versa."
+      ]
+    },
   ];
 
   return (

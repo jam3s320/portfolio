@@ -11,7 +11,7 @@ const Education = () => {
       date: "August 2025 - May 2029",
       logo: stevensLogo, /* Using the imported local image */
       bullets: [
-        { label: "Minor", text: "Cybersecurity" },
+        { label: "Minor", text: "Artifical Intelligence" },
         { label: "Courses", text: "Discrete Mathematics, Data Structures & Algorithms, Computer Architecture & Organization" },
         { label: "Activities", text: "Filipino Association at Stevens Tech (FAST), Society of Asian Scientists and Engineers (SASE), Volleyball Club, Blueprint" }
       ]

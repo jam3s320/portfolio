@@ -6,6 +6,18 @@ import tenzorLogo from '../assets/tenzor.png';
 const Experience = () => {
   const experienceData = [
     {
+      role: "Technology Support Analyst",
+      company: "Stevens Institute of Technology",
+      location: "Hoboken, NJ",
+      date: "August 2026 – Present",
+      logo: stevensLogo,
+      bullets: [
+        "Deliver in-person technical assistance and IT services to students and faculty, successfully resolving 50+ support tickets weekly with high satisfaction rates.",
+        "Diagnose and troubleshoot computer hardware and software infrastructure, ensuring thousands of users are seamlessly onboarded to campus technology systems.",
+        "Authored and refined technical troubleshooting guides, directly contributing to a 20\% reduction in average ticket resolution times."
+      ]
+    },
+    {
       role: "Music & Tech Lab Monitor",
       company: "Stevens Institute of Technology",
       location: "Hoboken, NJ",

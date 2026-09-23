@@ -8,35 +8,26 @@ const Contact = () => {
         <div style={styles.headingContainer}>
           <h2 style={styles.headingText}>Contact Me</h2>
         </div>
-        
+
         <div style={styles.content}>
-          {/* Left Side: Contact Info */}
-          <div style={styles.infoSide}>
-            <div style={styles.infoBlock}>
-              <FaEnvelope style={styles.icon} />
-              <div>
-                <h3 style={styles.infoTitle}>Email:</h3>
-                <p style={styles.infoText}>jamesmallari130@gmail.com</p>
-              </div>
-            </div>
-            
-            <div style={styles.infoBlock}>
-              <FaPhoneAlt style={styles.icon} />
-              <div>
-                <h3 style={styles.infoTitle}>Phone:</h3>
-                <p style={styles.infoText}>+1 609-212-8972</p>
-              </div>
+          <div style={styles.infoBlock}>
+            <FaEnvelope style={styles.icon} />
+            <div>
+              <h3 style={styles.infoTitle}>Email:</h3>
+              <a href="mailto:jamesmallari130@gmail.com" style={styles.infoLink}>
+                jamesmallari130@gmail.com
+              </a>
             </div>
           </div>
 
-          {/* Right Side: Contact Form */}
-          <div style={styles.formSide}>
-            <div style={styles.inputRow}>
-              <input type="text" placeholder="Your name" style={styles.input} />
-              <input type="email" placeholder="Your email" style={styles.input} />
+          <div style={styles.infoBlock}>
+            <FaPhoneAlt style={styles.icon} />
+            <div>
+              <h3 style={styles.infoTitle}>Phone:</h3>
+              <a href="tel:+16092128972" style={styles.infoLink}>
+                +1 609-212-8972
+              </a>
             </div>
-            <textarea placeholder="Send a message" style={styles.textarea}></textarea>
-            <button type="button" style={styles.button}>Send Message</button>
           </div>
         </div>
       </div>
@@ -58,7 +49,8 @@ const styles = {
     borderRadius: '40px',
     padding: '50px 60px',
     width: '100%',
-    maxWidth: '1000px',
+    maxWidth: '760px',
+    boxSizing: 'border-box',
     boxShadow: '0 10px 30px rgba(0, 0, 0, 0.2)',
   },
   headingContainer: {
@@ -75,14 +67,7 @@ const styles = {
   content: {
     display: 'flex',
     flexWrap: 'wrap',
-    gap: '40px',
-    justifyContent: 'space-between'
-  },
-  infoSide: {
-    flex: '1 1 250px',
-    display: 'flex',
-    flexDirection: 'column',
-    gap: '40px',
+    gap: '50px',
     justifyContent: 'center'
   },
   infoBlock: {
@@ -92,7 +77,8 @@ const styles = {
   },
   icon: {
     fontSize: '2rem',
-    color: '#d1d5db'
+    color: '#d1d5db',
+    flexShrink: 0
   },
   infoTitle: {
     margin: '0 0 5px 0',
@@ -100,58 +86,10 @@ const styles = {
     fontWeight: 'bold',
     color: '#ffffff'
   },
-  infoText: {
-    margin: 0,
+  infoLink: {
     fontSize: '1rem',
-    color: '#e2e8f0'
-  },
-  formSide: {
-    flex: '2 1 450px',
-    display: 'flex',
-    flexDirection: 'column',
-    gap: '15px'
-  },
-  inputRow: {
-    display: 'flex',
-    gap: '15px'
-  },
-  input: {
-    flex: 1,
-    padding: '12px 15px',
-    borderRadius: '8px',
-    border: '2px solid transparent',
-    backgroundColor: '#e2e8f0',
-    color: '#333',
-    fontSize: '1rem',
-    outline: 'none',
-    fontFamily: 'inherit'
-  },
-  textarea: {
-    width: '100%',
-    padding: '15px',
-    borderRadius: '8px',
-    border: 'none',
-    backgroundColor: '#e2e8f0',
-    color: '#333',
-    fontSize: '1rem',
-    minHeight: '150px',
-    outline: 'none',
-    fontFamily: 'inherit',
-    resize: 'vertical',
-    boxSizing: 'border-box'
-  },
-  button: {
-    alignSelf: 'center',
-    padding: '12px 35px',
-    borderRadius: '25px',
-    border: 'none',
-    backgroundColor: '#e2e8f0',
-    color: '#1a1e23',
-    fontWeight: 'bold',
-    fontSize: '1rem',
-    cursor: 'pointer',
-    marginTop: '10px',
-    transition: 'background-color 0.2s',
+    color: '#e2e8f0',
+    textDecoration: 'none'
   }
 };
 
