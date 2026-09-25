@@ -39,7 +39,7 @@ const About = () => {
       {/* Resume Button Container */}
       <div style={styles.buttonContainer}>
         <a 
-          href="https://drive.google.com/file/d/19XEWqzcCUlfMaWqy_IEiu6ZqDl91nIeT/view?usp=sharing" 
+          href="https://drive.google.com/file/d/1UXlipNbSb1yGdq9m0AnEHrRipSIzl5Qe/view?usp=sharing" 
           target="_blank" 
           rel="noreferrer" 
           style={styles.resumeButton}

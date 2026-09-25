@@ -83,7 +83,7 @@ const Hero = () => {
         </h2>
         
         <div style={styles.icons}>
-          <a href="https://drive.google.com/file/d/19XEWqzcCUlfMaWqy_IEiu6ZqDl91nIeT/view?usp=sharing" target="_blank" rel="noreferrer" style={styles.iconLink}>
+          <a href="https://drive.google.com/file/d/1UXlipNbSb1yGdq9m0AnEHrRipSIzl5Qe/view?usp=sharing" target="_blank" rel="noreferrer" style={styles.iconLink}>
             <FaFileAlt />
           </a>
           <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noreferrer" style={styles.iconLink}>
